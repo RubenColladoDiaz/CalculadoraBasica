@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+
+<html lang="es">
+  <head>
+    <meta charset="utf-8" />
+    <title>Calculadora Básica</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Calculadora básica online para escritorio."
+    />
+    <link href="Index.css" rel="stylesheet" type="text/css" />
+  </head>
+
+  <body>
+    <div class="canvas">
+      <p class="title">RoyalCalculator</p>
+      <hr style="border: 2px solid white; width: 100%" />
+
+      <input type="text" class="userinput" />
+
+      <div class="numbers">
+        <button onclick="addToInput('0')">0</button>
+        <button onclick="addToInput('1')">1</button>
+        <button onclick="addToInput('2')">2</button>
+        <button onclick="addToInput('3')">3</button>
+        <button onclick="addToInput('4')">4</button>
+        <button onclick="addToInput('5')">5</button>
+        <button onclick="addToInput('6')">6</button>
+        <button onclick="addToInput('7')">7</button>
+        <button onclick="addToInput('8')">8</button>
+        <button onclick="addToInput('9')">9</button>
+      </div>
+
+      <div class="operations">
+        <button onclick="addToInput('+')">+</button>
+        <button onclick="addToInput('-')">-</button>
+        <button onclick="addToInput('*')">x</button>
+        <button onclick="addToInput('/')">/</button>
+      </div>
+
+      <div class="send">
+        <button class="calculate" onclick="calculate()">Calcular</button>
+        <button class="delete" onclick="clearInput()">Borrar</button>
+      </div>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
